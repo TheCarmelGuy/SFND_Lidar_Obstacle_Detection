@@ -153,7 +153,8 @@ std::pair<typename pcl::PointCloud<PointT>::Ptr, typename pcl::PointCloud<PointT
     // Time segmentation process
     auto startTime = std::chrono::steady_clock::now();
     
-   std::vector<int> inliers;
+
+    std::vector<int> inliers;
   
   
   	// For max iterations 
@@ -177,11 +178,7 @@ std::pair<typename pcl::PointCloud<PointT>::Ptr, typename pcl::PointCloud<PointT
        int idx_1  = randomIdx[0];
        int idx_2 = randomIdx[1];
        int idx_3  = randomIdx[2];
-
-//      std::cout<<"ixd 1:"<<idx_1<<std::endl;
-//      std::cout<<"ixd 2:"<<idx_2<<std::endl;
-//      std::cout<<"ixd 3:"<<idx_3<<std::endl;
-       
+      
  
         // Randomly sample subset and fit line
        PointT p_1 = cloud->points[idx_1];

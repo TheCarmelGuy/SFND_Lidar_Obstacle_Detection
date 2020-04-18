@@ -50,7 +50,7 @@ const pcl::PointCloud<pcl::PointXYZI>::Ptr& inputCloud)
     minPoint<<-10.0,-6.0, -2.0, 1; 
      
     Eigen::Vector4f maxPoint;
-    maxPoint<<50.0f,6.0f, 500.0f, 1; 
+    maxPoint<<40.0f,6.0f, 100.0f, 1; 
 
     int debugBox = 0;
     
