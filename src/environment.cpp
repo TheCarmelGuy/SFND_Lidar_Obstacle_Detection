@@ -60,10 +60,10 @@ const pcl::PointCloud<pcl::PointXYZI>::Ptr& inputCloud)
 
     
     renderPointCloud(viewer,segmentedCloud.first,"Ground", Color(0,1,0));
-    //renderPointCloud(viewer,segmentedCloud.second,"Obstacles", Color(1,0,0));
+//    renderPointCloud(viewer,segmentedCloud.second,"Obstacles", Color(1,0,0));
 
 
-     std::vector<pcl::PointCloud<pcl::PointXYZI>::Ptr>  clusters = pointProcessorI->Clustering(segmentedCloud.second, 0.6, 10 , 100000);     
+     std::vector<pcl::PointCloud<pcl::PointXYZI>::Ptr>  clusters = pointProcessorI->Clustering(segmentedCloud.second, 0.6, 3 , 100000);     
  
 
     
@@ -119,7 +119,7 @@ void cityBlock(pcl::visualization::PCLVisualizer::Ptr& viewer)
 
     
     renderPointCloud(viewer,segmentedCloud.first,"Ground", Color(0,1,0));
-    renderPointCloud(viewer,segmentedCloud.second,"Obstacles", Color(1,0,0));
+ //   renderPointCloud(viewer,segmentedCloud.second,"Obstacles", Color(1,0,0));
 
 
 //     std::vector<pcl::PointCloud<pcl::PointXYZI>::Ptr>  clusters = pointProcessorI->Clustering(segmentedCloud.second, 1.0, 5 , 100000);     
