@@ -241,7 +241,8 @@ std::pair<typename pcl::PointCloud<PointT>::Ptr, typename pcl::PointCloud<PointT
 
 
 template<typename PointT>
-void ProcessPointClouds<PointT>::proximityCluster(typename pcl::PointCloud<PointT>::Ptr cloud,int index, std::vector<int>& isMarked, std::vector<int>& cluster,KdTree* tree,float distanceTol)
+void ProcessPointClouds<PointT>::proximityCluster(typename pcl::PointCloud<PointT>::Ptr cloud,
+        int index, std::vector<int>& isMarked, std::vector<int>& cluster,KdTree* tree,float distanceTol)
 {
 
   //TODO: Go back an make function to do this conversion
