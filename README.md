@@ -3,6 +3,14 @@
 <img src="media/ObstacleDetectionFPS.gif" width="700" height="400" />
 
 
+## Description
+
+This module does full-fledged Lidar clustering. The submodules include:
+
+1. Planar RANSAC to filter our ground plane
+2. Euclidean Clustering for obstacle detection using Custom-built KD tree
+3. PCA bouding Boxes fitting on clusters to determine pose
+
 ## Installation
 
 ### Ubuntu 
